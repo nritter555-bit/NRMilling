@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 720" fill="none">
+<defs>
+ <linearGradient id="top" x1="180" y1="180" x2="620" y2="500" gradientUnits="userSpaceOnUse"><stop stop-color="#edf0f2"/><stop offset=".23" stop-color="#8f9ba7"/><stop offset=".46" stop-color="#c3ccd3"/><stop offset=".7" stop-color="#667786"/><stop offset="1" stop-color="#a1aeb9"/></linearGradient>
+ <linearGradient id="front" x1="230" y1="430" x2="560" y2="560" gradientUnits="userSpaceOnUse"><stop stop-color="#94a2ae"/><stop offset=".27" stop-color="#485869"/><stop offset=".53" stop-color="#9aa8b4"/><stop offset="1" stop-color="#405163"/></linearGradient>
+ <linearGradient id="right" x1="545" y1="300" x2="710" y2="440" gradientUnits="userSpaceOnUse"><stop stop-color="#667786"/><stop offset=".5" stop-color="#303f51"/><stop offset="1" stop-color="#788a9e"/></linearGradient>
+ <linearGradient id="rim" x1="280" y1="240" x2="540" y2="430" gradientUnits="userSpaceOnUse"><stop stop-color="#f1f3f5"/><stop offset=".22" stop-color="#8795a4"/><stop offset=".45" stop-color="#d8dfe6"/><stop offset=".75" stop-color="#546878"/><stop offset="1" stop-color="#c2ced8"/></linearGradient>
+ <linearGradient id="bore" x1="370" y1="260" x2="460" y2="410" gradientUnits="userSpaceOnUse"><stop stop-color="#152130"/><stop offset=".35" stop-color="#526374"/><stop offset=".7" stop-color="#0b1420"/><stop offset="1" stop-color="#b0bbc5"/></linearGradient>
+ <linearGradient id="hole"><stop stop-color="#142032"/><stop offset=".5" stop-color="#1a2635"/><stop offset="1" stop-color="#687b8b"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#286de3" stop-opacity=".2"/><stop offset="1" stop-color="#286de3" stop-opacity="0"/></radialGradient>
+ <pattern id="grain" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><path d="M0 0h4" stroke="#fff" stroke-opacity=".065" stroke-width=".5"/></pattern>
+ <filter id="shadow" x="-50%" y="-100%" width="200%" height="300%"><feGaussianBlur stdDeviation="22"/></filter>
+ <mask id="plate"><path d="m157 348 254-145q15-8 31 0l256 146q15 9 0 18L447 514q-17 10-34 0L157 367q-16-10 0-19Z" fill="white"/><ellipse cx="425" cy="355" rx="96" ry="55" fill="black"/></mask>
+</defs>
+<ellipse cx="438" cy="470" rx="330" ry="220" fill="url(#glow)"/>
+<g stroke="#4274b8" stroke-width=".7" opacity=".18"><path d="m77 394 358-207 342 198M78 452l358-207 342 198M78 510l358-207 342 198M125 550l358-207M230 596l358-207M85 402l344 199M186 343l344 199M287 284l344 199M388 226l344 199"/><path d="M425 180v424" stroke-dasharray="3 7"/></g>
+<ellipse cx="430" cy="525" rx="215" ry="46" fill="#000" opacity=".6" filter="url(#shadow)"/>
+<path d="M147 359v60q0 10 13 18l253 146q17 10 34 0l252-145q12-7 12-18v-61L438 509Z" fill="url(#front)"/>
+<path d="m433 518 278-159v61q0 11-12 18L447 583q-6 3-14 5Z" fill="url(#right)"/>
+<path d="m157 348 254-145q15-8 31 0l256 146q15 9 0 18L447 514q-17 10-34 0L157 367q-16-10 0-19Z" fill="url(#top)"/>
+<path d="m157 348 254-145q15-8 31 0l256 146q15 9 0 18L447 514q-17 10-34 0L157 367q-16-10 0-19Z" fill="url(#grain)"/>
+<g stroke="#eff6ff" stroke-opacity=".28"><path d="m153 354 263-149q10-5 21 0l267 151M150 369l268 154q12 6 24 0l265-153"/><path d="m151 420 268 155q12 6 24 0l264-153" stroke-opacity=".12"/><path d="m154 410 266 153q12 6 24 0l262-151" stroke-opacity=".09"/><path d="m155 400 266 153q12 6 24 0l260-150" stroke-opacity=".09"/><path d="m155 390 266 153q12 6 24 0l260-150" stroke-opacity=".09"/></g>
+<path d="m223 355 190-109q12-7 25 0l191 109-191 111q-13 7-25 0Z" stroke="#4b5d6e" stroke-opacity=".7" stroke-width="2"/>
+<path d="m224 358 189-109q12-7 25 0l189 109-189 109q-13 7-25 0Z" stroke="#e2eaf0" stroke-opacity=".6"/>
+<path d="M300 323v38c0 41 56 74 125 74s125-33 125-74v-38Z" fill="url(#right)"/>
+<ellipse cx="425" cy="323" rx="125" ry="73" fill="url(#rim)" stroke="#e3e9ee" stroke-opacity=".55"/>
+<ellipse cx="425" cy="323" rx="105" ry="61" fill="url(#bore)" stroke="#4c5d6d" stroke-width="2"/>
+<path d="M321 325c9-29 51-46 104-46s93 18 104 46c-2-33-47-61-104-61s-101 27-104 61Z" fill="#0a1420" opacity=".8"/>
+<ellipse cx="425" cy="334" rx="90" ry="48" fill="#0b1420"/>
+<path d="M338 347c17 18 49 31 87 31s71-13 87-31" stroke="#9cabb8" stroke-opacity=".5" stroke-width="2"/>
+<ellipse cx="425" cy="323" rx="116" ry="67" stroke="#e1e8ed" stroke-opacity=".3"/>
+<ellipse cx="425" cy="323" rx="111" ry="64" stroke="#5a6a7b" stroke-opacity=".3"/>
+<path d="M300 335c0 41 56 74 125 74s125-33 125-74M300 343c0 41 56 74 125 74s125-33 125-74M300 351c0 41 56 74 125 74s125-33 125-74" stroke="#cfdae5" stroke-opacity=".12"/>
+<g fill="url(#hole)" stroke="#d0dce7" stroke-width="2"><ellipse cx="425" cy="231" rx="17" ry="10"/><ellipse cx="646" cy="358" rx="17" ry="10"/><ellipse cx="425" cy="482" rx="17" ry="10"/><ellipse cx="204" cy="358" rx="17" ry="10"/></g>
+<g fill="#0b1420" opacity=".8"><ellipse cx="425" cy="234" rx="11" ry="5"/><ellipse cx="646" cy="361" rx="11" ry="5"/><ellipse cx="425" cy="485" rx="11" ry="5"/><ellipse cx="204" cy="361" rx="11" ry="5"/></g>
+<g stroke="#d1dce5" stroke-opacity=".45"><path d="m280 448 43 25v20l-43-25z"/><path d="m286 456 7 4m4 2 6 4m4 2 9 5"/></g>
+<g stroke="#4386ed" stroke-width=".8" opacity=".6"><path d="M150 444v50m286 105v39m-275-151 264 153M152 485l16 9m-8-14-1 17m260 33 14 8m-6-14-1 17M729 360l29-17m-28 86 29-17m-5-69v66m-5-60 10-6m-10 70 10-6"/><path d="m237 256-49-29H112M548 292l69-78h94" stroke-dasharray="3 3"/></g>
+<g fill="#6d91c1" font-family="monospace" font-size="10" letter-spacing="1"><text x="232" y="570" transform="rotate(30 232 570)">125.00</text><text x="765" y="388">25.00</text><text x="111" y="216" font-size="8">AL / SUR MESURE</text><text x="622" y="203" font-size="8">CONCEPTION 3D</text></g>
+<g stroke="#4176be" opacity=".4"><path d="M111 176v14m-7-7h14M738 525v14m-7-7h14"/></g>
+</svg>
