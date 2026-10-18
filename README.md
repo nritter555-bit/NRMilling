@@ -16,7 +16,9 @@ Les images ci-dessous sont des captures du site affiché dans un navigateur. Vou
 
 ![La rubrique « Ils nous font confiance », en bas de page, avant le pied de page.](docs/apercu-partenaires.png)
 
-La rubrique présente uniquement Carambar & Co et se trouve après les questions fréquentes, en bas du site. Aucun logo recréé ou imité n’est utilisé. Le logo officiel doit être fourni en PNG ou SVG avant son intégration ; son téléchargement est bloqué dans cet environnement. Placer le fichier dans `public/images/partenaires/`, puis l’ajouter dans la rubrique avec la classe `partner-logo` et un texte alternatif reprenant le nom exact de la marque.
+La rubrique se trouve en bas du site, après les questions fréquentes. Elle affiche uniquement le titre « Ils nous font confiance » et une image du logo Carambar à côté, sans petite phrase ni nom recréé en typographie. Le logo est conservé dans `public/images/partenaires/carambar.png` et ses proportions sont préservées.
+
+Source du fichier image existant (aucune génération ou recréation du logo) : [carambarLogo.png](https://github.com/Jordan-182/carambarFrontend/blob/060949fc1151a07f61369f0caaf783432e7b3b51/src/assets/carambarLogo.png). Ce fichier correspond à une version du logo Carambar avec contour blanc, différente de l’image à contour jaune jointe dans la conversation. Le fichier joint n’était pas accessible dans l’espace de travail ; pour employer exactement cette autre version, remplacer le PNG local par le fichier original, sans redessiner le logo.
 
 ### Galerie des réalisations
 
