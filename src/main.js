@@ -104,3 +104,75 @@ const dialog = document.querySelector('#legal-dialog');
 document.querySelector('#legal-open').addEventListener('click', () => dialog.showModal());
 dialog.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
 dialog.addEventListener('click', event => { if (event.target === dialog) { const r = dialog.getBoundingClientRect(); if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close(); } });
+
+// Load the decorative video only when motion and the connection allow it.
+(() => {
+  const hero = document.querySelector('.hero');
+  const video = document.querySelector('.hero-video');
+  const toggle = document.querySelector('.hero-video-toggle');
+  const source = video.querySelector('source');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const connection = navigator.connection;
+  let userPaused = false;
+  let failed = false;
+  let loaded = false;
+  let inView = hero.getBoundingClientRect().bottom > 0 && hero.getBoundingClientRect().top < innerHeight;
+
+  function updateControl() {
+    const paused = video.paused;
+    toggle.setAttribute('aria-label', paused ? 'Lire la vidéo' : 'Mettre la vidéo en pause');
+    toggle.querySelector('span').textContent = paused ? 'Lire' : 'Pause';
+    toggle.querySelector('path').setAttribute('d', paused ? 'm8 5 11 7-11 7V5Z' : 'M9 5v14m6-14v14');
+  }
+
+  function usePoster() {
+    video.pause();
+    video.classList.remove('is-visible');
+    toggle.hidden = true;
+  }
+
+  function synchronizePlayback() {
+    if (failed || reducedMotion.matches || connection?.saveData) {
+      usePoster();
+      if (loaded) {
+        source.removeAttribute('src');
+        video.load();
+        loaded = false;
+      }
+      return;
+    }
+    if (!inView || document.hidden || userPaused) {
+      video.pause();
+      return;
+    }
+    if (!loaded) {
+      video.muted = true;
+      source.src = source.dataset.src;
+      video.load();
+      loaded = true;
+    }
+    toggle.hidden = false;
+    video.play().catch(() => {
+      // An autoplay restriction leaves the image and a manual play button.
+      updateControl();
+    });
+  }
+
+  toggle.addEventListener('click', () => {
+    userPaused = !video.paused;
+    synchronizePlayback();
+  });
+  video.addEventListener('playing', () => { video.classList.add('is-visible'); updateControl(); });
+  video.addEventListener('pause', updateControl);
+  const handleError = () => { failed = true; usePoster(); };
+  video.addEventListener('error', handleError);
+  source.addEventListener('error', handleError);
+  reducedMotion.addEventListener('change', synchronizePlayback);
+  connection?.addEventListener('change', synchronizePlayback);
+  document.addEventListener('visibilitychange', synchronizePlayback);
+  new IntersectionObserver(entries => {
+    inView = entries[0].isIntersecting;
+    synchronizePlayback();
+  }, { threshold: 0 }).observe(hero);
+  synchronizePlayback();
+})();

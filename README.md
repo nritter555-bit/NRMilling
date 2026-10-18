@@ -80,9 +80,15 @@ window.NRMillingProjects = [
 
 Les visuels initiaux sont des illustrations techniques originales, clairement identifiées comme visuels de présentation. Lorsque toutes les entrées disposent d’une photo, les textes « galerie en préparation » sont automatiquement remplacés par les textes de la galerie réelle. Prévoir un texte alternatif descriptif pour chaque photo.
 
-## Image d’accueil
+## Vidéo et image d’accueil
 
-La première section affiche une image d’usinage en plein écran, avec une navigation superposée. L’image défile avec cette section et disparaît lorsqu’on descend vers les services. Le cadrage s’adapte au mobile. Les styles correspondants se trouvent dans `src/hero.css`.
+La première section affiche la vidéo d’usinage fournie par NR Milling en plein écran, en boucle et sans son, avec une navigation superposée et un bouton lecture/pause. Elle défile avec cette section et disparaît lorsqu’on descend vers les services. Le cadrage s’adapte au mobile. Les styles correspondants se trouvent dans `src/hero.css`.
+
+La vidéo optimisée se trouve dans `public/videos/usinage-intro.mp4` (H.264, 1920 × 1080, 24 images/s, environ 9 secondes). La piste audio a été retirée, la compression allégée et les métadonnées placées au début du fichier pour permettre un démarrage rapide. Le contenu visuel, y compris le filigrane présent dans le fichier fourni, est conservé. L’original reste dans les pièces jointes de l’environnement.
+
+L’image reste visible pendant le chargement, en cas de lecture impossible et lorsque JavaScript est indisponible. Si le navigateur signale une préférence pour les animations réduites ou l’économie de données, la vidéo n’est pas téléchargée. La lecture s’arrête lorsque l’accueil est hors écran ou lorsque l’onglet est masqué. Une pause choisie par le visiteur est conservée lorsqu’il revient à l’accueil.
+
+Le serveur local prend en charge le type `video/mp4` et les requêtes HTTP partielles pour la lecture et la navigation dans la vidéo. Sur un hébergement statique, conserver le dossier `public/videos/` avec le reste du site. Aucune dépendance supplémentaire n’est nécessaire pour lire la vidéo.
 
 Le visuel `public/images/hero-machining.webp` est une image de présentation générée, optimisée en WebP (environ 160 Ko), et ne représente pas l’atelier ou une réalisation réelle de NR Milling. Il peut être remplacé par une photographie de votre atelier en conservant ce chemin ; adapter si nécessaire les dimensions HTML et le cadrage dans `src/hero.css`.
 

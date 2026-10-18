@@ -22,7 +22,11 @@
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-media" aria-hidden="true">
           <img class="hero-photo" src="./public/images/hero-machining.webp" alt="" width="1928" height="816" fetchpriority="high" />
+          <video class="hero-video" autoplay muted loop playsinline preload="none" poster="./public/images/hero-machining.webp" tabindex="-1">
+            <source data-src="./public/videos/usinage-intro.mp4" type="video/mp4" />
+          </video>
         </div>
+        <button class="hero-video-toggle" type="button" aria-label="Mettre la vidéo en pause" hidden><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5v14m6-14v14" /></svg><span>Pause</span></button>
         <div class="hero-content">
           <div class="eyebrow"><span class="hero-eyebrow-line"></span> CONCEPTION 3D & USINAGE ALUMINIUM</div>
           <h1 id="hero-title">De l’idée<br />à la <span>pièce.</span></h1>
