@@ -14,9 +14,9 @@ Les images ci-dessous sont des captures du site affiché dans un navigateur. Vou
 
 ### Partenaires
 
-![La rubrique « Ils nous font confiance » avec la mention Carambar, juste sous l’image d’accueil.](docs/apercu-partenaires.png)
+![La rubrique « Ils nous font confiance », en bas de page, avant le pied de page.](docs/apercu-partenaires.png)
 
-La collaboration avec Carambar est mentionnée à la demande de NR Milling. Le nom est actuellement présenté sous forme de texte ; le logo officiel n’a pas été fourni et son téléchargement est bloqué dans cet environnement. Dès réception du fichier officiel, remplacer le texte `.partner-wordmark` dans `index.html` par une image locale avec le texte alternatif « Carambar ».
+La rubrique présente uniquement Carambar & Co et se trouve après les questions fréquentes, en bas du site. Aucun logo recréé ou imité n’est utilisé. Le logo officiel doit être fourni en PNG ou SVG avant son intégration ; son téléchargement est bloqué dans cet environnement. Placer le fichier dans `public/images/partenaires/`, puis l’ajouter dans la rubrique avec la classe `partner-logo` et un texte alternatif reprenant le nom exact de la marque.
 
 ### Galerie des réalisations
 
