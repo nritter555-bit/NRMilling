@@ -8,7 +8,9 @@ Les images ci-dessous sont des captures du site affiché dans un navigateur. Vou
 
 ### Accueil
 
-![Accueil NR Milling : thème sombre et bleu, présentation des services et illustration d’une pièce aluminium.](docs/apercu-accueil.png)
+![Accueil NR Milling : grande image d’usinage en plein écran, menu superposé et titre sur fond sombre et bleu.](docs/apercu-accueil.png)
+
+[Voir également l’accueil sur mobile](docs/apercu-mobile.png).
 
 ### Galerie des réalisations
 
@@ -69,6 +71,12 @@ window.NRMillingProjects = [
 3. Ajouter autant d’entrées que nécessaire, puis relancer `npm run build` pour mettre à jour le dossier de déploiement.
 
 Les visuels initiaux sont des illustrations techniques originales, clairement identifiées comme visuels de présentation. Lorsque toutes les entrées disposent d’une photo, les textes « galerie en préparation » sont automatiquement remplacés par les textes de la galerie réelle. Prévoir un texte alternatif descriptif pour chaque photo.
+
+## Image d’accueil
+
+La première section affiche une image d’usinage en plein écran, avec une navigation superposée. L’image défile avec cette section et disparaît lorsqu’on descend vers les services. Le cadrage s’adapte au mobile. Les styles correspondants se trouvent dans `src/hero.css`.
+
+Le visuel `public/images/hero-machining.webp` est une image de présentation générée, optimisée en WebP (environ 160 Ko), et ne représente pas l’atelier ou une réalisation réelle de NR Milling. Il peut être remplacé par une photographie de votre atelier en conservant ce chemin ; adapter si nécessaire les dimensions HTML et le cadrage dans `src/hero.css`.
 
 ## Avant publication
 
