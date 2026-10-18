@@ -12,6 +12,12 @@ Les images ci-dessous sont des captures du site affiché dans un navigateur. Vou
 
 [Voir également l’accueil sur mobile](docs/apercu-mobile.png).
 
+### Partenaires
+
+![La rubrique « Ils nous font confiance » avec la mention Carambar, juste sous l’image d’accueil.](docs/apercu-partenaires.png)
+
+La collaboration avec Carambar est mentionnée à la demande de NR Milling. Le nom est actuellement présenté sous forme de texte ; le logo officiel n’a pas été fourni et son téléchargement est bloqué dans cet environnement. Dès réception du fichier officiel, remplacer le texte `.partner-wordmark` dans `index.html` par une image locale avec le texte alternatif « Carambar ».
+
 ### Galerie des réalisations
 
 ![Galerie NR Milling, avec des illustrations de présentation en attendant les photos des réalisations.](docs/apercu-realisations.png)
