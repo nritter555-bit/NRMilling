@@ -2,6 +2,22 @@
 
 Site vitrine en français, responsive, pour l’usinage aluminium, la conception 3D et les petites séries jusqu’à 100 pièces. Réalisé en HTML, JavaScript et CSS, sans dépendance, serveur applicatif ni base de données.
 
+## Voir un aperçu sans télécharger
+
+Les images ci-dessous sont des captures du site affiché dans un navigateur. Vous pouvez cliquer dessus sur GitHub pour les agrandir. Il s’agit de captures, pas d’une version interactive.
+
+### Accueil
+
+![Accueil NR Milling : thème sombre et bleu, présentation des services et illustration d’une pièce aluminium.](docs/apercu-accueil.png)
+
+### Galerie des réalisations
+
+![Galerie NR Milling, avec des illustrations de présentation en attendant les photos des réalisations.](docs/apercu-realisations.png)
+
+### Contact et devis
+
+![Coordonnées NR Milling et formulaire de préparation d’un devis dans Gmail.](docs/apercu-contact.png)
+
 ## Ouvrir le site simplement
 
 Depuis GitHub : cliquer sur **Code → Download ZIP**, puis extraire entièrement l’archive et ouvrir `index.html` dans Chrome, Edge, Firefox ou Safari. Ne pas ouvrir le fichier directement à l’intérieur du ZIP ni avec l’application ChatGPT.
